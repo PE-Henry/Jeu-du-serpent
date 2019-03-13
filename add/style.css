@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  position: absolute;
+  left: 5vw;
+  top: 0;
+  width: 90vw;
+  height: 100vh;
+  background-color: #70e1f5;
+  background-image: url("./background_wood.jpg");
+  background-position:top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+.btn-menu{
+  position: absolute;
+  width: auto;
+  left: 1em;
+  top: 1em;
+  background-color: #e2e2e2;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.5);
+  transition: .2s;
+}
+.btn-menu i{
+  font-size: 1.5em;
+}
+.btn-menu:hover i{
+  transform: scale(1.1);
+}
+.btn-menu:hover{
+  background-color: #d6d1c2;
+  box-shadow: none;
+}
+#settings{
+  padding: 1vw;
+  font-size: 3vw;
+  -webkit-transition: -webkit-transform .8s ;
+          transition:         transform .8s ;
+}
+#settings:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#settings_full{
+  display: none ;
+}
+#notice{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+.param{
+  position:absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 2em;
+  right: 0;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px 4px rgba(0,0,0,.5);
+}
+.btn-group button{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 50%;
+}
+#gameboy{
+  position: relative;
+  margin: 10vh auto;
+  margin-bottom: 0;
+  height: 90vh;
+  width: 96vh;
+  background: #EEE;
+  border-radius: 6.4vh 6.4vh 0 0;
+  overflow: hidden;
+  box-shadow: 3.2vh 0vh rgba(0,0,0,0.1);
+}
+#gameboy:before{
+  position: absolute;
+  width: 160vh;
+  height: 6.4vh;
+  border-bottom: 1.92vh solid #E0E0E0;
+  content: "";
+}
+#gameboy:after{
+  position: absolute;
+  width: 76.8vh;
+  height: 6.4vh;
+  left: 7.68vh;
+  border-left: 1.92vh solid #E0E0E0;
+  border-right: 1.92vh solid #E0E0E0;
+  content: "";
+}
+
+#screen{
+  position: absolute;
+  width: 80.64vh;
+  height: 67.2vh;
+  left: 7.68vh;
+  top: 12.8vh;
+  background: #777;
+  border-radius: 3.2vh 3.2vh 12.8vh 3.2vh
+}
+/**
+#screen:before{
+  position: absolute;
+  width: 25.6vh;
+  height: 25.6vh;
+  top: 4.16vh;
+  left: 7.36vh;
+  background: #AE9B32;
+  box-shadow: inset 0.64vh 0.64vh rgba(0,0,0,0.1);
+  content: "";
+}
+**/
+#screen:after{
+  position: absolute;
+  height: 3.2vh;
+  width: 3.2vh;
+  top: 28.8vh;
+  left: 5.76vh;
+  border-radius: 100%;
+  background: #B00;
+  content: "";
+}
+
+#screen.special:after{
+  background-color: #0B1;
+}
+
+#playground{
+  position: absolute;
+  width: 51.2vh;
+  height: 51.2vh;
+  top: 8.32vh;
+  left: 14.72vh;
+  background-color: #5A7052;
+  box-shadow:inset 0px 0px 0px 0.96vh #5A7052;
+  content: "";
+}
